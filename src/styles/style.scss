@@ -1,5 +1,19 @@
-.barrel {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_mixins";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+// @import "blocks/_header";
+// @import "blocks/_main-nav";
+// @import "blocks/_catalog";
+// @import "blocks/_catalog-form";
+// @import "blocks/_custom-radio";
+// @import "blocks/_catalog-list";
+// @import "blocks/_catalog-card";
