@@ -1,0 +1,63 @@
+@use "../global/variables" as *;
+
+.sidebar {
+  background-color: $color-gainsboro;
+  height: 100vh;
+  max-width: 290px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+
+  &__logo-container {
+    border-right: 1px solid $color-mischka;
+    min-height: 69px;
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+    margin-bottom: 45px;
+  }
+
+  &__logo {
+    width: 184px;
+    height: 30px;
+  }
+
+  &__nav {
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 9px 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+  }
+
+  &__link-text {
+    font-size: 20px;
+    line-height: 100%;
+    color: $color-dark-blue;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+}

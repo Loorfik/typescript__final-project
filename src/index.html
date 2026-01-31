@@ -12,33 +12,125 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__content">
-                <div class="header__logo-container">
-                    <svg class="header__logo" width="186" height="30">
-                        <use xlink:href="assets/images/sprite.svg#logo"></use>
+            <div class="header__wrapper">
+                <div class="header__search">
+                    <input class="header__search-input" type="text" placeholder="Что будем искать?">
+                    <svg class="header__search-icon" width="20" height="20">
+                        <use xlink:href="assets/images/sprite.svg#search"></use>
                     </svg>
                 </div>
-                <div class="header__wrapper">
-                    <div class="header__search">
-                        <input class="header__search-input" type="text" placeholder="Что будем искать?">
-                        <svg class="header__search-icon" width="20" height="20">
-                            <use xlink:href="assets/images/sprite.svg#search"></use>
-                        </svg>
-                    </div>
-                    <a href="#" class="header__user-link">
-                        <img class="header__user-icon" src="assets/images/user-example.png" alt="avatar">
-                        <span class="header__user-name">username</span>
-                        <svg class="header__arrow-icon">
-                            <use xlink:href="assets/images/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </a>
-                </div>
-
+                <a href="#" class="header__user-link">
+                    <img class="header__user-icon" src="assets/images/user-example.png" alt="avatar">
+                    <span class="header__user-name">username</span>
+                    <svg class="header__arrow-icon">
+                        <use xlink:href="assets/images/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <section class="audio">
+            <div class="container">
+                <h1 class="visually-hidden">Аудиоплеер</h1>
+                <div class="audio__wrapper">
+                    <aside class="sidebar">
+                        <div class="sidebar__logo-container">
+                            <svg class="sidebar__logo" width="186" height="30">
+                                <use xlink:href="assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <nav class="sidebar__nav">
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                        <svg class="sidebar__icon">
+                                            <use xlink:href="assets/images/sprite.svg#music"></use>
+                                        </svg>
+                                        <span class="sidebar__link-text">Избранное</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                        <svg class="sidebar__icon">
+                                            <use xlink:href="assets/images/sprite.svg#music"></use>
+                                        </svg>
+                                        <span class="sidebar__link-text">Аудиокомпозиции</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <!-- Тут будет список песен -->
+                </div>
+                <div class="player">
+                    <div class="player__info">
+                        <img src="assets/images/playlist-example.jpg" alt="" class="player__info-img" width="60"
+                            height="60">
+                        <div class="player__info-wrapper">
+                            <div class="player__name-wrapper">
+                                <span class="player__song-name">Histoire Sans Nom</span>
+                                <button class="player__favorite-btn">
+                                    <svg class="player__favorite-icon" width="24" height="24">
+                                        <use xlink:href="assets/images/sprite.svg#heart"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <span class="player__song-info">Ludovico Einaudi, Czech National Symphony Orchestra</span>
+                        </div>
+                    </div>
+
+                    <div class="player__controls">
+                        <div class="player__btn-wrapper">
+                            <button class="player__controls-btn player__controls-btn--mix" id="btn-mix">
+                                <svg class="player__controls-icon" width="16" height="16">
+                                    <use xlink:href="assets/images/sprite.svg#mix"></use>
+                                </svg>
+                            </button>
+                            <button class="player__controls-btn player__controls-btn--prev" id="btn-skip-back">
+                                <svg class="player__controls-icon" width="16" height="16">
+                                    <use xlink:href="assets/images/sprite.svg#skip-back"></use>
+                                </svg>
+                            </button>
+                            <button class="player__controls-btn player__controls-btn--pause" id="btn-pause">
+                                <svg class="player__controls-icon" width="40" height="40">
+                                    <use xlink:href="assets/images/sprite.svg#pause"></use>
+                                </svg>
+                            </button>
+                            <button class="player__controls-btn player__controls-btn--forward" id="btn-skip-forward">
+                                <svg class="player__controls-icon" width="16" height="16">
+                                    <use xlink:href="assets/images/sprite.svg#skip-forward"></use>
+                                </svg>
+                            </button>
+                            <button class="player__controls-btn player__controls-btn--repeat" id="btn-repeat">
+                                <svg class="player__controls-icon" width="16" height="16">
+                                    <use xlink:href="assets/images/sprite.svg#repeat"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="player__time">
+                            <span class="player__time-number player__time-number--passed">0:00</span>
+                            <span class="player__timeline"></span>
+                            <span class="player__time-number player__time-number--total">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="player__volume">
+                        <button class="player__volume-btn">
+                            <svg class="player__volume-icon" width="16" height="16">
+                                <use xlink:href="assets/images/sprite.svg#volume"></use>
+                            </svg>
+                        </button>
+                        <div class="player__volume-line">
+                            <div class="player__volume-current"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

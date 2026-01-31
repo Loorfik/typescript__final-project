@@ -5,31 +5,9 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 5;
   background-color: $color-white;
-  padding: 0 20px;
-
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 47px;
-  }
-
-  &__logo-container {
-    border-right: 1px solid $color-mischka;
-    min-height: 69px;
-    max-width: 290px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__logo {
-    width: 184px;
-    height: 30px;
-  }
+  padding: 15px 20px 15px 337px;
 
   &__wrapper {
     display: flex;
