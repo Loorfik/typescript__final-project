@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -18,7 +19,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.svg$/,
+        test: /\.(png|jpe?g|svg)$/,
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name][ext]",
@@ -42,6 +43,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "src/assets/images/img",
+          to: "assets/images",
+        },
+      ],
     }),
   ],
 
