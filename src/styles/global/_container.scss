@@ -1,11 +1,7 @@
 @use './mixins' as *;
 
 // .container {
-//   max-width: unset;
+//   max-width: 1440px;
 //   margin: 0 auto;
-//   padding: 0 30px;
-
-//   @include vp-1023 {
-//     padding: 0 16px;
-//   }
+//   overflow: hidden;
 // }

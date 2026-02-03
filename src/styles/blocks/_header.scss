@@ -1,13 +1,13 @@
 @use "../global/variables" as *;
 
 .header {
+  display: flex;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 5;
   background-color: $color-white;
-  padding: 15px 20px 15px 337px;
 
   &__wrapper {
     display: flex;
@@ -15,6 +15,24 @@
     justify-content: space-between;
     gap: 30px;
     width: 100%;
+    padding: 15px 30px;
+  }
+
+  &__logo-container {
+    border-right: 1px solid $color-mischka;
+    min-height: 69px;
+    max-width: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+    padding: 5px;
+  }
+
+  &__logo {
+    width: 184px;
+    height: 30px;
   }
 
   &__search {

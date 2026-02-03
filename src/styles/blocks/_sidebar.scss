@@ -5,25 +5,7 @@
   height: 100vh;
   max-width: 290px;
   width: 100%;
-  position: fixed;
-  z-index: 10;
-
-  &__logo-container {
-    border-right: 1px solid $color-mischka;
-    min-height: 69px;
-    max-width: 290px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-white;
-    margin-bottom: 45px;
-  }
-
-  &__logo {
-    width: 184px;
-    height: 30px;
-  }
+  padding-top: 42px;
 
   &__nav {
     height: 100%;

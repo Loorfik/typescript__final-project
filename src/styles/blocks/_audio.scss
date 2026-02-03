@@ -1,0 +1,10 @@
+@use "../global/variables" as *;
+
+.audio {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 290px 1fr;
+        gap: 45px;
+        padding: 82px 30px 83px 0;
+    }
+}
